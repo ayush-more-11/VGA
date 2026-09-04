@@ -1,0 +1,28 @@
+# Vivado generated/project files
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.xpr
+*.jou
+*.log
+*.str
+*.backup.*
+
+# Keep clean source files
+!src/
+!src/*.v
+
+# Keep simulation/result images
+!results/
+!results/*.jpg
+!results/*.jpeg
+!results/*.png
+
+# Repository files
+!README.md
+!LICENSE
+!.gitignore
