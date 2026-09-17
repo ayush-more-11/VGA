@@ -134,7 +134,6 @@ The waveform screenshots are shown at different time scales. Viewing the complet
 **File:** `results/vga_pixel_clock.png`
 
 **Signals:** `clk`, `p_tick`, `pixel_x`  
-**Time scale:** approximately `0–300 ns`
 
 This view verifies the 50 MHz system clock, the effective 25 MHz pixel timing event, and pixel-counter activity relative to `p_tick`.
 
@@ -145,7 +144,6 @@ This view verifies the 50 MHz system clock, the effective 25 MHz pixel timing ev
 **File:** `results/vga_horizontal_timing.png`
 
 **Signals:** `p_tick`, `hsync`, `video_on`, `pixel_x`  
-**Time scale:** approximately `0–33 µs`
 
 This view shows one complete horizontal line:
 
@@ -166,7 +164,6 @@ The expected line period is `32 µs`. `video_on` is HIGH only in the active 640-
 **File:** `results/vga_frame_timing.png`
 
 **Signals:** `hsync`, `vsync`, `video_on`, `pixel_y`  
-**Time scale:** approximately `0–20 ms`
 
 This view verifies complete frame-level timing and vertical synchronization:
 
@@ -198,8 +195,6 @@ The images in `docs/` illustrate the expected VGA concepts, while the images in 
 The repository includes [`scripts/vga_build.tcl`](scripts/vga_build.tcl), a Vivado-generated Tcl script for recreating the project setup. Generated Vivado project files are intentionally excluded from version control.
 
 The repository retains the RTL, testbench, Vivado IP configuration, waveform configuration, simulation screenshots, documentation diagrams, and Tcl project-generation script needed to reproduce the documented project setup. The script does not automatically launch synthesis or implementation runs; those runs must be started separately if required.
-
-No cross-machine validation or physical hardware validation is claimed by this README.
 
 ## Repository Structure
 
