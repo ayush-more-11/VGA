@@ -1,4 +1,7 @@
+# =========================================================
 # Vivado generated/project files
+# =========================================================
+
 .Xil/
 *.cache/
 *.hw/
@@ -6,23 +9,55 @@
 *.runs/
 *.sim/
 *.srcs/
+
 *.xpr
 *.jou
 *.log
 *.str
 *.backup.*
+*.xml
+*.ltx
 
-# Keep clean source files
+
+# =========================================================
+# Keep HDL source files
+# =========================================================
+
 !src/
-!src/*.v
+!src/**/*.v
 
-# Keep simulation/result images
+
+# =========================================================
+# Keep constraints
+# =========================================================
+
+!constraints/
+!constraints/**/*.xdc
+
+
+# =========================================================
+# Keep simulation / documentation results
+# =========================================================
+
 !results/
-!results/*.jpg
-!results/*.jpeg
-!results/*.png
+!results/**/*.png
+!results/**/*.jpg
+!results/**/*.jpeg
+!results/**/*.wcfg
 
+
+# =========================================================
+# Keep build / automation scripts
+# =========================================================
+
+!scripts/
+!scripts/**/*.tcl
+
+
+# =========================================================
 # Repository files
+# =========================================================
+
 !README.md
 !LICENSE
 !.gitignore
