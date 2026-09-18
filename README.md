@@ -2,7 +2,7 @@
 
 A compact Verilog VGA timing controller for a **640×480 display at approximately 60 Hz**, designed around a **50 MHz system clock** and an effective **25 MHz pixel timing tick**. The project is simulated with **Xilinx Vivado/XSim** and includes waveform captures that document pixel, line, and frame timing.
 
-> This repository implements VGA timing generation and simulation. It does not include framebuffer, image-processing, HDMI, camera-interface, or physical monitor-validation features.
+> This repository implements VGA timing generation and simulation. It does not include framebuffer, image-processing, HDMI, or camera-interface features.
 
 ## Overview
 
@@ -177,6 +177,18 @@ This view verifies complete frame-level timing and vertical synchronization:
 
 The expected frame period is `16.8 ms`, corresponding to a frame frequency of approximately `59.52 Hz`.
 
+### Physical monitor display evidence
+
+The following JPEG photos document the VGA output shown on a physical monitor and complement the Vivado/XSim waveform screenshots above.
+
+![Physical Monitor Display Evidence 1](results/vga_monitor_1.jpeg)
+
+**File:** `results/vga_monitor_1.jpeg`
+
+![Physical Monitor Display Evidence 2](results/vga_monitor_2.jpeg)
+
+**File:** `results/vga_monitor_2.jpeg`
+
 ### Waveform configuration
 
 `results/vga_tb_behav.wcfg` is the Vivado/XSim waveform configuration file. It preserves the waveform signal setup and view configuration; it is not an image or a simulation-result screenshot.
@@ -186,7 +198,7 @@ The expected frame period is `16.8 ms`, corresponding to a frame frequency of ap
 The repository separates explanatory material from simulation evidence:
 
 - `docs/` contains reference diagrams explaining VGA timing concepts and the relationship between active video and synchronization intervals.
-- `results/` contains waveform screenshots and the Vivado/XSim waveform configuration generated for the Verilog testbench.
+- `results/` contains waveform screenshots, physical monitor photos, and the Vivado/XSim waveform configuration generated for the Verilog testbench.
 
 The images in `docs/` illustrate the expected VGA concepts, while the images in `results/` demonstrate the behavior of the implemented RTL in simulation.
 
@@ -211,6 +223,8 @@ VGA/
 │   ├── vga_pixel_clock.png
 │   ├── vga_horizontal_timing.png
 │   ├── vga_frame_timing.png
+│   ├── vga_monitor_1.jpeg
+│   ├── vga_monitor_2.jpeg
 │   └── vga_tb_behav.wcfg
 ├── scripts/
 │   ├── vga_build.tcl
