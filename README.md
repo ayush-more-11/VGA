@@ -177,9 +177,9 @@ This view verifies complete frame-level timing and vertical synchronization:
 
 The expected frame period is `16.8 ms`, corresponding to a frame frequency of approximately `59.52 Hz`.
 
-### Physical monitor display evidence
+### Physical monitor display
 
-The following JPEG photos document the VGA output shown on a physical monitor and complement the Vivado/XSim waveform screenshots above.
+The following JPEG photos document the VGA output shown on a physical monitor.
 
 ![Physical Monitor Display Evidence 1](results/vga_monitor_1.jpeg)
 
