@@ -189,10 +189,6 @@ The following JPEG photos document the VGA output shown on a physical monitor.
 
 **File:** `results/vga_monitor_2.jpeg`
 
-### Waveform configuration
-
-`results/vga_tb_behav.wcfg` is the Vivado/XSim waveform configuration file. It preserves the waveform signal setup and view configuration; it is not an image or a simulation-result screenshot.
-
 ## Documentation vs. Results
 
 The repository separates explanatory material from simulation evidence:
